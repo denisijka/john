@@ -1,7 +1,141 @@
 .header {
-  // .header__content
+  // .header__menu
+  // 1.Зафиксируем шапку, что бы она всегда при скроле была сверху.
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; /* что бы она накрыла весь наш контент. */
+  //   2.Создадим плашку:
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* то есть на весь размер нашей шапочки width с height; */
+    // background-color: #5e5373;
+    z-index: 2;
+  }
+  //   3. Вытащим наверх контентную часть шапки:
+  &__menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    align-items: center;
+  }
+}
+.menu {
+  // 7.Будем прятать меню в бургер на всем что меньше 768px.
+  // .menu__icon
+  &__icon {
+    display: none;
+  }
+  &__body {
+  }
 
-  &__content {
-    max-width: 1032px;
+  // .menu__list
+  // 4.Верстаем само меню
+  &__list {
+    position: relative;
+    display: flex;
+    z-index: 2; /* что бы отображался список при расширении больше 767px */
+    li {
+      margin: 0px 0px 0px 20px;
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    &__menu {
+      height: 50px;
+    }
+    &__logo {
+      flex: 0 0 40px;
+    }
+  }
+  .menu {
+    &__icon {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+      span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        transition: all 0.1s ease 0s;
+      }
+      &::before,
+      &::after {
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    // 8. Работаем над меню
+    &__body {
+      position: fixed;
+      top: -100%; /* что бы оно появлялось сверху(съезжало) */
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #18b5a4;
+      padding: 70px 10px 20px 10px;
+      transition: all 0.3s ease 0s; /* что бы меню выезжало сверху плавно. */
+      overflow: auto; /* что бы можно было скролить меню в бургере при горизонтальном просмотре экрана. */
+    }
+    &__list {
+      display: block; // отключаем ему display: flex;
+      li {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+    // 11. Увеличим щрифт при адаптиве, что бы было удоюней было пользоваться. И мы видим что у нас уже не влазит меню при горизонтальном расположении экрана (если развернуть телефон горизонтально)
+    &__link {
+      font-size: 24px;
+    }
+    // 9. Подключаем js и создаем .active:
+    .active {
+      top: 0; /* при нажатии на бургер мы добавляем класс active к header-body. */
+      &::before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      span {
+        transform: scale(0);
+      }
+    }
   }
 }
