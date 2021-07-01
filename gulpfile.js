@@ -42,7 +42,7 @@ let path = {
 		html: [src_folder + "/**/*.html", "!" + src_folder + "/_*.html"],
 		js: src_folder + "/js/script.js",
 		css: src_folder + "/scss/style.scss",
-		images: [src_folder + "/img/**/*.{jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
+		images: [src_folder + "/img/**/*.{jpeg,jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf",
 		videos: src_folder + "/videos/*.*",
 		json: src_folder + "/json/*.*"
@@ -51,7 +51,7 @@ let path = {
 		html: src_folder + "/**/*.html",
 		js: src_folder + "/**/*.js",
 		css: src_folder + "/scss/**/*.scss",
-		images: src_folder + "/img/**/*.{jpeg,png,svg,gif,ico,webp}",
+		images: src_folder + "/img/**/*.{jpeg,jpg,png,svg,gif,ico,webp}",
 		json: src_folder + "/json/*.*"
 	},
 	clean: "./" + project_name + "/"
