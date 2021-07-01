@@ -1017,6 +1017,10 @@ body.ie ._ibg img {
     max-width: 750px;
   }
 
+  .hello {
+    padding: 0px 0px 70px 0px;
+  }
+
   .hello__content {
     margin: 18px 50px 0px 0px;
   }
