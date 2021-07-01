@@ -5,6 +5,9 @@
     // уберем вообще отступ сверху
     padding: 0px 0px 70px 0px;
   }
+  @media (max-width: $md3+px) {
+    padding: 0px 0px 50px 0px;
+  }
   // .hello__container
 
   &__container {

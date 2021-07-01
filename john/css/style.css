@@ -1124,6 +1124,10 @@ body.ie ._ibg img {
     bottom: calc(50% - 1px);
   }
 
+  .hello {
+    padding: 0px 0px 50px 0px;
+  }
+
   .page {
     padding: 30px 0px 0px 0px;
   }
