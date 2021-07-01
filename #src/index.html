@@ -8,7 +8,19 @@
 <body>
     <div class="wrapper">
         @@include('_header.html',{})
-        <main>
+        <main class="page">
+            <div class="hello">
+                <!-- <div class="hello"> - это общая оболочка всего блока. -->
+                <!-- Придумали класс hello так как - это какое-то приветствие, то есть джон с нами здоровается, говорит кто он, что он и т.д. -->
+                <div class="hello__container _container">
+                    <div class="hello__content">
+
+                    </div>
+                    <div class="hello__avatar">
+
+                    </div>
+                </div>
+            </div>
 
         </main>
         @@include('_footer.html',{})
