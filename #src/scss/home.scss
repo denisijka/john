@@ -43,18 +43,29 @@
 
   &__title {
     margin: 0px 0px 25px 0px; /* делаем на глаз так как там гораздо меньше чем в макете 40px. */
+    @media (max-width: $md3+px) {
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   // .hello__text
 
   &__text {
     margin: 0px 0px 35px 0px;
+    @media (max-width: $md3+px) {
+      padding: 0 15px;
+      margin: 0px 0px 25px 0px;
+    }
   }
 
   // .hello__btn
 
   &__btn {
     margin: 0px 0px 25px 0px;
+    @media (max-width: $md3+px) {
+      // на всякий случай
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   // .__avatar
