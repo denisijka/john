@@ -878,6 +878,14 @@ body.ie ._ibg img {
   display: flex;
 }
 
+.hello__content {
+  padding: 0px 110px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  /* разрешаем увеичиваться, уменьшаться и ширина автоматически, что позволяет нашей контентной части занимать и придавливать изображение которое имеет у нас фиксированый размер */
+}
+
 .hello__avatar {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 243px;
