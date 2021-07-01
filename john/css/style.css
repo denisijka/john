@@ -878,6 +878,20 @@ body.ie ._ibg img {
   display: flex;
 }
 
+.hello__avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 243px;
+          flex: 0 0 243px;
+  /* для фиксированых колонок мы запрещаем увеличиваться(первый 0), уменьшаться(второй 0), и устанавливаем фиксированую ширину 243px; */
+  height: 243px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hello__avatar img {
+  max-width: 100%;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
