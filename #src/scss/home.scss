@@ -88,3 +88,69 @@
 }
 //====================================================================================================
 //
+.recent-posts {
+  background: #edf7fa;
+  padding: 25px 0px 32px 0px;
+  // .recent-posts__container
+
+  &__container {
+  }
+
+  // .recent-posts__header
+
+  &__header {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+  }
+
+  // .recent-posts__title
+
+  &__title {
+    padding: 0px 20px 0px 0px;
+    flex: 1 1 auto; /* это можно написать вместо space-between. Он позволяем ему увеличиваться, он берет и толкает View all в другой конец. */
+    font-size: 22px;
+  }
+
+  // .recent-posts__view-all
+
+  &__view-all {
+    flex: 0 0 auto; /* мы запретили уменьшаться объекту. */
+    font-size: 16px;
+    line-height: 23px;
+    color: #00a8cc;
+    @media (max-width: $md3+px) {
+      display: none;
+    }
+  }
+
+  // .recent-posts__items
+
+  &__items {
+  }
+
+  // .recent-posts__column
+
+  &__column {
+  }
+
+  // .recent-posts__item
+
+  &__item {
+  }
+}
+.recent-post {
+  // .recent-post__title
+
+  &__title {
+  }
+
+  // .recent-post__info
+
+  &__info {
+  }
+
+  // .recent-post__text
+
+  &__text {
+  }
+}

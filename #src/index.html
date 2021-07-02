@@ -9,7 +9,7 @@
     <div class="wrapper">
         @@include('_header.html',{})
         <main class="page">
-            <div class="hello">
+            <section class="hello">
                 <!-- <div class="hello"> - это общая оболочка всего блока. -->
                 <!-- Придумали класс hello так как - это какое-то приветствие, то есть джон с нами здоровается, говорит кто он, что он и т.д. -->
                 <div class="hello__container _container">
@@ -26,10 +26,34 @@
                     </div> -->
                     <img class="hello__avatar" src="img/avatar.jpg" alt="">
                 </div>
-            </div>
+            </section>
+            <section class="recent-posts">
+                <div class="recent-posts__container _container">
+                    <div class="recent-posts__header">
+                        <div class="recent-posts__title">Recent posts</div>
+                        <a href="#" class="recent-posts__view-all">View all</a>
+                    </div>
+                    <div class="recent-posts__items">
+                        <div class="recent-posts__column">
+                            <article class="recent-posts__item recent-post">
+                                <a href="" class="recent-post__title">Making a design system from scratch</a>
+                                <div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
+                                <div class="recent-post__text text">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
 
-        </main>
-        @@include('_footer.html',{})
+    </div>
+    </div>
+    </section>
+
+    </main>
+    @@include('_footer.html',{})
     </div>
     @@include('_js.html',{})
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

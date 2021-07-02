@@ -932,6 +932,37 @@ body.lock {
   max-width: 100%;
 }
 
+.recent-posts {
+  background: #edf7fa;
+  padding: 25px 0px 32px 0px;
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.recent-posts__title {
+  padding: 0px 20px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  /* это можно написать вместо space-between. Он позволяем ему увеличиваться, он берет и толкает View all в другой конец. */
+  font-size: 22px;
+}
+
+.recent-posts__view-all {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  /* мы запретили уменьшаться объекту. */
+  font-size: 16px;
+  line-height: 23px;
+  color: #00a8cc;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
@@ -1162,6 +1193,10 @@ body.lock {
     height: 170px;
     margin: 0px 0px 40px 0px;
     /* визуально у нас ничего не поменялось, у нас есть изображение кот. задан margin вниз и если не будет изображения то у нас не будет лишних висячих отступов перед контентом. */
+  }
+
+  .recent-posts__view-all {
+    display: none;
   }
 
   .page {
