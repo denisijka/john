@@ -963,6 +963,14 @@ body.lock {
   color: #00a8cc;
 }
 
+.recent-posts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  /* как сделать отступ 20px, мы просто раздвигаем по 10px. */
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
