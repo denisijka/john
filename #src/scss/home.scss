@@ -167,6 +167,12 @@
   // .recent-post__info
 
   &__info {
+    margin: 0px 0px 15px 0px;
+    font-size: 18px;
+    line-height: 26 / 18 * 100%;
+    span {
+      margin: 0 10px; /* так как span строчный то можно margin только по бокам. */
+    }
   }
 
   // .recent-post__text

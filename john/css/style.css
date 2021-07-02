@@ -998,6 +998,17 @@ body.lock {
   margin: 0px 0px 17px 0px;
 }
 
+.recent-post__info {
+  margin: 0px 0px 15px 0px;
+  font-size: 18px;
+  line-height: 144.44444%;
+}
+
+.recent-post__info span {
+  margin: 0 10px;
+  /* так как span строчный то можно margin только по бокам. */
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
