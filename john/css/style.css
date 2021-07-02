@@ -979,6 +979,8 @@ body.lock {
 }
 
 .recent-post {
+  height: 100%;
+  /* что бы полностью растягивался контент если в колонке добавлять текст. */
   padding: 20px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
