@@ -18,21 +18,39 @@
   // .works__body
 
   &__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 18px;
   }
 
   // .works__title
 
   &__title {
+    color: inherit;
+    font-weight: 700;
+
+    font-size: 30px;
+    line-height: 44 / 30 * 100%;
   }
 
   // .works__info
 
   &__info {
+    display: inline-flex;
   }
 
   // .works__year
 
   &__year {
+    background: #142850;
+    border-radius: 16px;
+    height: 25px;
+    padding: 0px 10px;
+    display: inline-flex;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
   }
 
   // .works__category

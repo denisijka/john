@@ -1046,6 +1046,45 @@ body.lock {
   min-height: 180px;
 }
 
+.works__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 0px 0px 18px;
+}
+
+.works__title {
+  color: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 146.66667%;
+}
+
+.works__info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.works__year {
+  background: #142850;
+  border-radius: 16px;
+  height: 25px;
+  padding: 0px 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 900;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
