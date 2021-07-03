@@ -1028,6 +1028,24 @@ body.lock {
   margin: 0px 0px 20px 0px;
 }
 
+.works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* прижмем всех к верху, что бы при слишком большом тексте картинку не раскурочело. Что изменилось? Изменилось то что мы можем сейчас вставить абсолютно любую картинку и она впишеться в эти размеры макета */
+}
+
+.works__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 246px;
+          flex: 0 0 246px;
+  border-radius: 6px;
+  min-height: 180px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
