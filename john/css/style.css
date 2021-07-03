@@ -1036,6 +1036,9 @@ body.lock {
       -ms-flex-align: start;
           align-items: flex-start;
   /* прижмем всех к верху, что бы при слишком большом тексте картинку не раскурочело. Что изменилось? Изменилось то что мы можем сейчас вставить абсолютно любую картинку и она впишеться в эти размеры макета */
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .works__image {
