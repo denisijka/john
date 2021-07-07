@@ -878,6 +878,19 @@ body.lock {
   display: none;
 }
 
+.footer {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.footer__social {
+  margin: 0px 0px 25px 0px;
+}
+
+.footer__copy {
+  font-size: 14px;
+}
+
 .hello {
   padding: 38px 0px 70px 0px;
 }
