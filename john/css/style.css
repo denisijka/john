@@ -575,7 +575,8 @@ textarea.input {
   line-height: 136.36364%;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 143.75%;
   color: #21243d;
@@ -1187,6 +1188,66 @@ body.lock {
   color: #8695a4;
 }
 
+.article {
+  max-width: 700px;
+  padding: 0px 10px 30px;
+  margin: 0 auto;
+}
+
+.article__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 147.05882%;
+  margin: 0px 0px 30px 0px;
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.article__year {
+  background: #ff7c7c;
+  border-radius: 16px;
+  height: 25px;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.article__category {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  /* с обычной шириной будет а по центру, а когда в адаптиве в 2 строчки то по другому */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  margin: 0px 0px 0px 20px;
+}
+
+.article__text p {
+  /* мы можем сюда притянуть стили из такого то класса. Именно с класса текст мы получаем. */
+  margin: 0px 0px 20px 0px;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
@@ -1532,6 +1593,14 @@ body.lock {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 
   .page {
