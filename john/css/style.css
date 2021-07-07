@@ -1037,8 +1037,13 @@ body.lock {
           align-items: flex-start;
   /* прижмем всех к верху, что бы при слишком большом тексте картинку не раскурочело. Что изменилось? Изменилось то что мы можем сейчас вставить абсолютно любую картинку и она впишеться в эти размеры макета */
   padding: 0px 0px 30px 0px;
+  /* сделаем по всему макету 30px margin и padding. */
   margin: 0px 0px 30px 0px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.works__item:last-child {
+  margin-bottom: 0;
 }
 
 .works__image {
@@ -1058,6 +1063,7 @@ body.lock {
 
 .works__title {
   color: inherit;
+  /* что бы ссылка наследовала стандартный цвет. */
   font-weight: 700;
   display: inline-block;
   font-size: 30px;
