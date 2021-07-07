@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html', {
+"title":"Article",
+})
+
+<body>
+    <div class="wrapper">
+        <!-- передадим переменную link и указажем какая ссылка должна быть у нас главная -->
+        @@include('_header.html',{
+        "link":"1"
+        })
+        <main class="page">
+
+
+
+        </main>
+        @@include('_footer.html',{})
+    </div>
+    @@include('_js.html',{})
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
