@@ -8,9 +8,22 @@
   // .blog__title
 
   &__title {
+    margin: 0px 0px 55px 0px;
   }
   // .blog__article-name
   &__article-name {
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block; /* что бы тег <a> смог имет margin-bottom. */
+    line-height: 44 / 30 * 100%;
+    transition: color 0.3s ease 0s;
+    margin: 0px 0px 10px 0px; /* поставим 10px вместо 16px нижний отступ так как у нас есть line-height. */
+    color: inherit;
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
   }
   // .blog__items
 
@@ -27,6 +40,7 @@
   &__info {
     display: flex;
     font-size: 20px;
+    margin: 0px 0px 10px 0px;
   }
 
   // .blog__date
