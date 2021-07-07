@@ -1382,7 +1382,7 @@ body.lock {
     padding: 30px 0px 30px 0px;
   }
 
-  .works {
+  .featured-works__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1390,7 +1390,7 @@ body.lock {
     /* что бы скролить без подключения свайпа.Без использования js*/
   }
 
-  .works__item {
+  .featured-works__items .works__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
