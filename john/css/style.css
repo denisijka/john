@@ -1378,6 +1378,25 @@ body.lock {
     margin: 0px 0px 10px 0px;
   }
 
+  .featured-works {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+    /* что бы скролить без подключения свайпа.Без использования js*/
+  }
+
+  .works__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    margin: 0px 15px 0px 0px;
+  }
+
   .works__image {
     margin: 0px 0px 17px 0px;
     padding: 0px 0px 60% 0px;
