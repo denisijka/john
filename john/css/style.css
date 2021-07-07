@@ -1127,6 +1127,11 @@ body.lock {
   margin: 0px 0px 0px 25px;
 }
 
+.blog {
+  padding-bottom: 50px;
+  /* из-за того что мы совмещаем blog и page container нам просто нужно сделать  padding-bottom(не будет конфликтов) */
+}
+
 .blog__title {
   margin: 0px 0px 55px 0px;
 }
@@ -1143,6 +1148,16 @@ body.lock {
   margin: 0px 0px 10px 0px;
   /* поставим 10px вместо 16px нижний отступ так как у нас есть line-height. */
   color: inherit;
+}
+
+.blog__item {
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.blog__item:last-child {
+  margin: 0px 0px 0px 0px;
 }
 
 .blog__info {
@@ -1384,6 +1399,10 @@ body.lock {
     bottom: calc(50% - 1px);
   }
 
+  .footer {
+    padding: 30px 0px;
+  }
+
   .hello {
     padding: 0px 0px 60px 0px;
   }
@@ -1468,6 +1487,28 @@ body.lock {
 
   .works__title {
     font-size: 24px;
+  }
+
+  .blog {
+    padding-bottom: 30px;
+  }
+
+  .blog__title {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .blog__article-name {
+    font-size: 26px;
+  }
+
+  .blog__item {
+    padding: 0px 0px 25px 0px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .blog__info {
+    font-size: 16px;
   }
 
   .page {
