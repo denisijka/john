@@ -129,10 +129,9 @@
   // .recent-posts__items
 
   &__items {
-    display: flex;
     margin: 0 -10px; /* как сделать отступ 20px, мы просто раздвигаем по 10px. */
-    @media (max-width: $md3+px) {
-      flex-direction: column;
+    @media (min-width: $md3+px) {
+      display: flex;
     }
   }
 

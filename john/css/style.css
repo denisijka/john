@@ -58,6 +58,8 @@
 
 /* это наш ограничивающий контейнер, дальше контента нет, дальше будет полотно */
 
+/* устройства меньше 768px */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -964,9 +966,6 @@ body.lock {
 }
 
 .recent-posts__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 -10px;
   /* как сделать отступ 20px, мы просто раздвигаем по 10px. */
 }
@@ -1029,12 +1028,6 @@ body.lock {
 }
 
 .works__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   /* прижмем всех к верху, что бы при слишком большом тексте картинку не раскурочело. Что изменилось? Изменилось то что мы можем сейчас вставить абсолютно любую картинку и она впишеться в эти размеры макета */
   padding: 0px 0px 30px 0px;
   /* сделаем по всему макету 30px margin и padding. */
@@ -1050,15 +1043,17 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 246px;
           flex: 0 0 246px;
+  display: block;
   border-radius: 6px;
   min-height: 180px;
+  overflow: hidden;
+  /* что бы у нас края картинки зарезались на всех возможных вариантах. */
 }
 
 .works__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0px 0px 0px 18px;
 }
 
 .works__title {
@@ -1143,6 +1138,25 @@ body.lock {
 
   .menu__list li {
     margin: 0px 33px 0px 0px;
+  }
+
+  .recent-posts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .works__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .works__body {
+    padding: 0px 0px 0px 18px;
   }
 }
 
@@ -1350,13 +1364,6 @@ body.lock {
     display: none;
   }
 
-  .recent-posts__items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .recent-post {
     padding: 15px;
   }
@@ -1369,6 +1376,15 @@ body.lock {
   .recent-post__info {
     font-size: 16px;
     margin: 0px 0px 10px 0px;
+  }
+
+  .works__image {
+    margin: 0px 0px 17px 0px;
+    padding: 0px 0px 60% 0px;
+  }
+
+  .works__title {
+    font-size: 24px;
   }
 
   .page {
