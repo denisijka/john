@@ -1127,6 +1127,21 @@ body.lock {
   margin: 0px 0px 0px 25px;
 }
 
+.blog__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.blog__separator {
+  margin: 0px 15px;
+}
+
+.blog__category {
+  color: #8695a4;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;

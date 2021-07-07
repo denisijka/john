@@ -1,0 +1,53 @@
+.page {
+  // .page__container
+
+  &__container {
+  }
+}
+.blog {
+  // .blog__title
+
+  &__title {
+  }
+  // .blog__article-name
+  &__article-name {
+  }
+  // .blog__items
+
+  &__items {
+  }
+
+  // .blog__item
+
+  &__item {
+  }
+
+  // .blog__info
+
+  &__info {
+    display: flex;
+    font-size: 20px;
+  }
+
+  // .blog__date
+
+  &__date {
+  }
+
+  // .blog__separator
+
+  &__separator {
+    margin: 0px 15px;
+  }
+
+  // .blog__category
+
+  &__category {
+    color: #8695a4;
+  }
+
+  // .blog__text
+
+  &__text {
+  }
+}
